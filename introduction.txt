@@ -1,0 +1,3 @@
+node js is a runtime environment for the java script that helps js to run in the backend.
+
+module : in node.js all the files that is having .js extension is considered as module.
