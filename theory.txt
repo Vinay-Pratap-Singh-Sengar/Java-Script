@@ -1,0 +1,14 @@
+in java script we have 3 types of module : 
+    1. user-defined module (made by developer)
+    2. in-built module (provided by nodejs) : 
+        a. os module 
+        b. fs module
+        c. path module
+        d. http module etc. 
+
+
+    3. third party module (provided by npm)
+        a. express
+        b. bcrypt
+        c. jsonwebtoken
+        d. nodemailer etc.
