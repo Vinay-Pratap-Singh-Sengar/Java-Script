@@ -1,0 +1,64 @@
+Both request and the response comprises 3 parts:
+    1. The status line : 
+        a. This is the first line of the request or response. 
+        b. it contains the information about the message such as : 
+            i. the method used(get, post, put , delete, patch)etc.
+            ii. url
+            iii. protocol
+            iv. version and so on.
+
+    2. The header : 
+        it is a collection of key-value pairs , separated by colons.
+        the header includes additional information about the message such as 
+            i. the content type, 
+            ii. content-length, 
+            iii. caching information and so on.
+
+    3. The Body
+        body contains the actual data being sent or recieved . 
+        - In case of request : it might contain form data or query parameters . 
+        - In case of response : it could be in form of HTML , JSON , XML or any other data format
+
+
+
+What are Http methods ? 
+these are the actions that client can perform on a server. it is also known as the HTTP verbs.
+
+    - get
+    - put
+    - post
+    - patch
+    - delete
+
+
+
+What is status code ? 
+- http status codes are the three-digit numbers that indicate the status of a HTTP request made to a server. 
+
+- They are the server responses that provides the information about the request outcome. 
+
+1xx Informational Code 
+
+
+2xx Success Codes (The Good Stuff)
+1. 200 OK: Request successful, server returned data. 
+2. 201 Created: Request fulfilled, new resource created (e.g., after a POST). 
+3. 204 No Content: Request successful, but nothing to send back (e.g., successful delete). 
+
+3xx Redirection Codes (Look Elsewhere)
+1. 301 Moved Permanently: Resource moved to a new, permanent URL. 
+2. 302 Found (Temporary Redirect): Resource temporarily at a different URL. 
+3. 304 Not Modified: Browser's cached version is still good, saves bandwidth. 
+
+4xx Client Error Codes (Your Fault)
+1. 400 Bad Request: Server couldn't understand the request (bad syntax/params).
+2. 401 Unauthorized: Authentication (login) is required.
+3. 403 Forbidden: Server understands the request but won't fulfill it (permissions issue).
+4. 404 Not Found: The requested resource doesn't exist.
+5. 429 Too Many Requests: Hitting rate limits. 
+
+5xx Server Error Codes (Server's Fault)
+1. 500 Internal Server Error: Unexpected server problem. 
+2. 502 Bad Gateway: Server acting as gateway got an invalid response from another server. 
+3. 503 Service Unavailable: Server is down for maintenance or overloaded. 
+
